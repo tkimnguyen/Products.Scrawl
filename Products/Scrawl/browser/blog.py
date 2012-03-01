@@ -36,6 +36,6 @@ class BlogView(BrowserView):
         Returns a dictionary of criteria to pass to the query method.
         """
         
-        if 'Subject' in self.request.form:
-            return {'Subject': self.request.form.get('Subject')}
-        return {}
+        allowed_filters = ['Subject', 'Creator']
+        return dict([(f, self.request.form.get(f)) \
+            for f in allowed_filters if f in self.request.form])
