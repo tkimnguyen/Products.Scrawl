@@ -4,6 +4,10 @@ Changelog
 Scrawl 2.0 - unreleased
 -----------------------
 
+- Excluded unpublished comments from the displayed count for sites with
+  plone.app.discussion.
+  [yomatters]
+
 - Allowed filtering of blog view by author.
   [yomatters]
 

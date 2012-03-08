@@ -25,7 +25,10 @@ class BlogView(BrowserView):
         if HAS_PAD:
             if IDiscussionLayer.providedBy(self.request):
                 conversation = IConversation(obj)
-                return conversation.enabled() and len(conversation)
+                if conversation.enabled():
+                    workflow = getToolByName(self.context, 'portal_workflow')
+                    return len([c for c in conversation.values() \
+                        if workflow.getInfoFor(c, 'review_state') == 'published'])
         if self.portal_discussion.isDiscussionAllowedFor(obj):
             discussion = self.portal_discussion.getDiscussionFor(obj)
             return discussion.replyCount(obj)
