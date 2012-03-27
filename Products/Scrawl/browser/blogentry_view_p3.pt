@@ -53,7 +53,7 @@
                 August 16, 2001 at 23:35:59
                 </span>
             </tal:hasDate>
-            |
+            <span class="separator">|</span>
             <a class="permalink" title="Link to this post and its comments.  Use this for bookmarking."
                i18n:domain="scrawl"
                i18n:translate="label_perma_link"

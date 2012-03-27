@@ -4,6 +4,9 @@ Changelog
 Scrawl 2.0 - unreleased
 -----------------------
 
+- Added class to blog entry byline separator for easier CSS.
+  [yomatters]
+
 - Fixed permalink URL in blog view.
   [yomatters]
 
