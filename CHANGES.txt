@@ -4,6 +4,9 @@ Changelog
 Scrawl 2.0 - unreleased
 -----------------------
 
+- Removed invalid dl in blog view.
+  [yomatters]
+
 - Added class to blog entry byline separator for easier CSS.
   [yomatters]
 

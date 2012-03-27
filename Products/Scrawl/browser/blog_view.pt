@@ -21,6 +21,8 @@
         </div>
         
         <metal:block use-macro="context/folder_listing/macros/content-core">
+            <metal:entries fill-slot="entries">
+            <metal:block use-macro="context/folder_listing/macros/entries">
             <metal:block fill-slot="entry">
                 <div class="tileItem visualIEFloatFix vevent"
                     tal:define="item_effective item/EffectiveDate|nothing;
@@ -105,6 +107,8 @@
 
                 </div>
             </metal:block>
+            </metal:block>
+            </metal:entries>
         </metal:block>
     </metal:block>
 </metal:content-core>
