@@ -58,7 +58,7 @@
                i18n:domain="scrawl"
                i18n:translate="label_perma_link"
                i18n:attributes="title label_perma_link_title"
-               tal:attributes="href context/absolute_url">Permalink</a>
+               tal:attributes="href item_url|context/absolute_url">Permalink</a>
 
             <div class="keyword-info"
                  i18n:domain="scrawl"
