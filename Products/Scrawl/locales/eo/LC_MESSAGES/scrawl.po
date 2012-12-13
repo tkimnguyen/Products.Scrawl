@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Scrawl\n"
-"POT-Creation-Date: 2011-02-25 15:05+0000\n"
+"POT-Creation-Date: 2012-12-13 15:40+0000\n"
 "PO-Revision-Date: 2011-01-09 14:19+0600\n"
 "Last-Translator: Noe Nieto <tzicatl@gmail.com>\n"
 "Language-Team: es <LL@li.org>\n"
@@ -23,12 +23,12 @@ msgid "Blog Entry"
 msgstr "Blogo enskribigo"
 
 #. Default: "Blog view"
-#: ./browser/configure.zcml
+#: ./i18n.py:5
 msgid "Blog view"
 msgstr "Blogo vido"
 
 #. Default: "View Blog Entry"
-#: ./browser/configure.zcml
+#: ./i18n.py:6
 msgid "View Blog Entry"
 msgstr "Vidi Blogo Enskibigo"
 
@@ -51,25 +51,25 @@ msgid "label_blog_entry_date"
 msgstr "ĉe ${date}"
 
 #. Default: "Read comments ${comments} ${no_comments}"
-#: ./browser/blog_view.pt:77
+#: ./browser/blog_view.pt:79
 #: ./browser/blog_view_p3.pt:130
 msgid "label_blog_entry_read_comments"
 msgstr "Legi komentoj ${comments} ${no_comments}"
 
 #. Default: "(None yet)"
-#: ./browser/blog_view.pt:78
+#: ./browser/blog_view.pt:80
 #: ./browser/blog_view_p3.pt:131
 msgid "label_blog_entry_read_comments_none_yet"
 msgstr "(Neniu ankoraû)"
 
 #. Default: "(${blog_entry_count} so far)"
-#: ./browser/blog_view.pt:76
+#: ./browser/blog_view.pt:78
 #: ./browser/blog_view_p3.pt:129
 msgid "label_blog_entry_read_comments_so_far"
 msgstr "(${blog_entry_count} ĝis ankoraû)"
 
 #. Default: "Read comments on this post and weigh in yourself!"
-#: ./browser/blog_view.pt:67
+#: ./browser/blog_view.pt:69
 #: ./browser/blog_view_p3.pt:120
 msgid "label_blog_entry_read_comments_title"
 msgstr "Legi la kometoj pri ĉi tiu enskribigo kaj skribu via opinio!"
