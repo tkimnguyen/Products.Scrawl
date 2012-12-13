@@ -5,7 +5,7 @@ version = '2.0b1'
 setup(name='Products.Scrawl',
       version=version,
       description="Scrawl is a dirt-simple blog product for Plone.",
-      long_description=open("README.txt").read() + "\n" +
+      long_description=open("README.rst").read() + "\n" +
                        open("CHANGES.txt").read(),
       # Get more strings from http://www.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
