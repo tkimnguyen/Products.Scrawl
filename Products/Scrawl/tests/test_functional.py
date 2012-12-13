@@ -1,5 +1,6 @@
 """
-    Scrawl functional doctests (based on the on from CMFPlone).  This module collects all *.txt
+    Scrawl functional doctests (based on the on from CMFPlone).
+    This module collects all *.txt
     files in the tests directory and runs them.
 
     See also ``test_doctests.py``.
@@ -16,12 +17,12 @@ from Products.Scrawl.tests.base import ScrawlFunctionalTestCase
 from Products.Scrawl.config import GLOBALS
 
 
-
 OPTIONFLAGS = (
     #doctest.REPORT_ONLY_FIRST_FAILURE |
     doctest.ELLIPSIS |
     doctest.NORMALIZE_WHITESPACE
 )
+
 
 def list_doctests():
     home = package_home(GLOBALS)
@@ -40,22 +41,3 @@ def test_suite():
               for filename in filenames]
 
     return unittest.TestSuite(suites)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

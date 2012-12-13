@@ -20,6 +20,7 @@ Scrawl 2.0 - unreleased
 - Allowed filtering of blog view by author.
   [yomatters]
 
+- Move sources to github.com/collective/Products.Scrawl
 
 Scrawl 2.0b1 - 2011.02.24
 -------------------------

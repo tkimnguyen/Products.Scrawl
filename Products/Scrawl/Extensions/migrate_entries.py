@@ -1,7 +1,7 @@
 """To use, ensure that the contentmigrations product is available
-   in your products directory, then add an external method to the 
+   in your products directory, then add an external method to the
    portal_skins/custom directory (in the ZMI) such that:
-   
+
    id = migrateQuills
    title = migrateQuills
    module name = Scrawl.migrate_entries
@@ -14,7 +14,7 @@
 
    For more information on content type migration, see:
    http://plone.org/documentation/tutorial/richdocument/migrations
-   
+
    Migration by Trey Beck
 """
 
@@ -24,6 +24,7 @@ from StringIO import StringIO
 from Products.contentmigration.basemigrator.walker import CatalogWalker
 from Products.contentmigration.basemigrator.migrator import CMFItemMigrator
 
+
 class WeblogEntryMigrator(CMFItemMigrator):
 
     walkerClass = CatalogWalker
@@ -31,7 +32,8 @@ class WeblogEntryMigrator(CMFItemMigrator):
     src_portal_type = 'WeblogEntry'
     dst_meta_type = 'News Item'
     dst_portal_type = 'Blog Entry'
-    map = {'getRawText' : 'setText'}
+    map = {'getRawText': 'setText'}
+
 
 def migrate(self):
     """Run the migration"""
@@ -50,12 +52,12 @@ def migrate(self):
         walker.go(out=out)
         print >> out, walker.getOutput()
     # update the portal_type
-    results=cat(portal_type=migrator.dst_portal_type)
+    results = cat(portal_type=migrator.dst_portal_type)
     for brain in results:
         ob = brain.getObject()
         ob._setPortalTypeName(migrator.dst_portal_type)
         ob.reindexObject(['portal_type'])
-    
+
     # And let's also update workflows
     #print >> out, "Updating workflow"
     #wf = getToolByName(self, 'portal_workflow')
@@ -66,9 +68,9 @@ def migrate(self):
     #for type in linkableKupuTypes:
     #    self.addKupuResource('linkable', type)
     #for type in mediaKupuTypes:
-    #    self.addKupuResource('mediaobject', type)        
+    #    self.addKupuResource('mediaobject', type)
     #for type in collectionKupuTypes:
     #    self.addKupuResource('collection', type)
-    
+
     print >> out, "Migration finished"
     return out.getvalue()
