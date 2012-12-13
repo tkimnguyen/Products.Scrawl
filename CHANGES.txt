@@ -21,6 +21,10 @@ Scrawl 2.0 - unreleased
   [yomatters]
 
 - Move sources to github.com/collective/Products.Scrawl
+  [toutpt]
+
+- Add french translation
+  [toutpt]
 
 Scrawl 2.0b1 - 2011.02.24
 -------------------------
