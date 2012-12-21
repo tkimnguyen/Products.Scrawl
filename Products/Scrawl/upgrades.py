@@ -5,7 +5,7 @@ def null_upgrade_step(setup_tool):
     pass
 
 
-def upgrade_to_20b1(setup_tool):
+def common(setup_tool):
     """
     Upgrade the pre-GenericSetup version of Scrawl to version 2.0b1.
     """

@@ -3,15 +3,15 @@
     xmlns:browser="http://namespaces.zope.org/browser"
     xmlns:zcml="http://namespaces.zope.org/zcml"
     i18n_domain="scrawl">
-    
+
     <include package="plone.app.contentmenu" />
-    
+
     <browser:resource
         name="blogentry_icon.png"
         file="blogentry_icon.png"
         layer=".interfaces.IScrawlLayer"
         />
-    
+
     <!-- Browser views for Plone 4 -->
     <configure zcml:condition="installed plone.app.upgrade.v40">
         <browser:page
@@ -19,8 +19,8 @@
             name="blog_view"
             class=".blog.BlogView"
             template="blog_view.pt"
-    		    layer=".interfaces.IScrawlLayer"
-    		    menu="plone_displayviews"
+            layer=".interfaces.IScrawlLayer"
+            menu="plone_displayviews"
             title="Blog view"
             permission="zope2.View"
             />
@@ -35,7 +35,19 @@
             permission="zope2.View"
             />
     </configure>
-    
+    <configure zcml:condition="installed plone.app.collection">
+        <browser:page
+            for="plone.app.collection.interfaces.ICollection"
+            name="blog_view"
+            class=".blog.BlogView"
+            template="blog_view.pt"
+            layer=".interfaces.IScrawlLayer"
+            menu="plone_displayviews"
+            title="Blog view"
+            permission="zope2.View"
+            />
+    </configure>
+
     <!-- Browser views for Plone 3 -->
     <configure zcml:condition="not-installed plone.app.upgrade.v40">
         <browser:page
