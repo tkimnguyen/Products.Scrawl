@@ -4,6 +4,11 @@ Changelog
 Scrawl 2.0 - unreleased
 -----------------------
 
+- Removed attempt to render the related items macro in the blog entry view. This
+  skin template was removed in Plone 4.3. Related items are now (by default) in
+  the below content viewlet, so the old macro is now unneeded.
+  [smcmahon]
+
 - Removed invalid dl in blog view.
   [yomatters]
 
@@ -58,7 +63,7 @@ Scrawl 2.0b1 - 2011.02.24
 
 - Added a Zope 3 browser layer.
   [yomatters]
-  
+
 - Replaced install and uninstall methods with GenericSetup profiles.
   [yomatters]
 
@@ -66,7 +71,7 @@ Scrawl 2.0b1 - 2011.02.24
 Scrawl 1.3.2 - 2010.03.09
 -------------------------
 
-- Uninstall resets display template for existing Collections using 
+- Uninstall resets display template for existing Collections using
   blog_view. Thanks to Shane Graber! [jbaldivieso]
 
 - Added support for Plone 4. [pelle]
