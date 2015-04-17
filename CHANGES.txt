@@ -1,8 +1,15 @@
 Changelog
 =========
 
-Scrawl 2.0 - 2.0 - 2015.04.17
------------------------------
+Scrawl 2.0.1 - 2015.04.17
+-------------------------
+
+- Add missing CHANGES.txt to egg
+  [tkimnguyen]
+
+
+Scrawl 2.0 - 2015.04.17
+-----------------------
 
 - Updated docs and version for release
   [tkimnguyen]
