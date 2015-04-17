@@ -8,7 +8,7 @@ shows either the description of each contained blog entry (if it exists) or the
 entire body.  It's up to the user to limit those results in an intelligent
 way so that page loads doesn't take too long.
 
-Scrawl works in Plone 3.x and 4.0.
+Scrawl works in Plone 3.x and 4.x (up to and including 4.3.4).
 
 Installation
 ============
@@ -34,7 +34,7 @@ in Products.Scrawl.Extensions.migrate_entries for more details.  YMMV.
 Credits
 =======
 
-Development by Groundwire_ (formlery ONE/Northwest) <jonb@groundwire.org>.
+Original development by Groundwire_ (formlery ONE/Northwest).
 
 .. _Groundwire: http://groundwire.org/
 

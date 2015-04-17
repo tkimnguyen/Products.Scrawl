@@ -1,8 +1,11 @@
 Changelog
 =========
 
-Scrawl 2.0 - unreleased
------------------------
+Scrawl 2.0 - 2.0 - 2015.04.17
+-----------------------------
+
+- Updated docs and version for release
+  [tkimnguyen]
 
 - Removed attempt to render the related items macro in the blog entry view. This
   skin template was removed in Plone 4.3. Related items are now (by default) in
